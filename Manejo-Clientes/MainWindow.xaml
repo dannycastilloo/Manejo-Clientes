@@ -1,0 +1,27 @@
+﻿<Window x:Class="Manejo_Clientes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Manejo_Clientes"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="884">
+    <Grid>
+        <DataGrid Name="McDataGrid" AutoGenerateColumns="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="500" Width="952" Margin="12,21,0,0" Background="LightGray" RowBackground="LightYellow" AlternatingRowBackground="LightBlue" BorderBrush="Gray" BorderThickness="1">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID Cliente" Width="70" Binding="{Binding idCliente}" />
+                <DataGridTextColumn Header="Nombre Compañía" Width="110" Binding="{Binding NombreCompania}" />
+                <DataGridTextColumn Header="Nombre Contacto" Width="110" Binding="{Binding NombreContacto}" />
+                <DataGridTextColumn Header="Cargo Contacto" Width="100" Binding="{Binding CargoContacto}" />
+                <DataGridTextColumn Header="Dirección" Width="70" Binding="{Binding Direccion}" />
+                <DataGridTextColumn Header="Ciudad" Width="70" Binding="{Binding Ciudad}" />
+                <DataGridTextColumn Header="Region" Width="60" Binding="{Binding Region}" />
+                <DataGridTextColumn Header="Código Postal" Width="90" Binding="{Binding CodPostal}" />
+                <DataGridTextColumn Header="País" Width="40" Binding="{Binding Pais}" />
+                <DataGridTextColumn Header="Teléfono" Width="60" Binding="{Binding Telefono}" />
+                <DataGridTextColumn Header="Fax" Width="40" Binding="{Binding Fax}" />
+                <DataGridTextColumn Header="Activo" Width="50" Binding="{Binding activo}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
